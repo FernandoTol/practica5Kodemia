@@ -3,13 +3,12 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Red Hat Display', sans-serif;
+    
 }
 
-.img-back{
-    height: 100%;
-    width: auto;
-    background-color: hsl(225, 100%, 98%);
+body{
+    background-image: url("../assets/images/pattern-background-desktop.svg");
+    background-color: hsl(225, 100%, 94%);
 }
 
 .card{
@@ -17,17 +16,76 @@
     width: auto;
     top: 50%;
     left: 50%;
+    background-color: white;
     transform: translateX(-50%) translateY(-50%);
     position: absolute;
-    border:1px solid black;
-    border-radius: 5%;
+    border:1px solid white;
+    border-radius: 10%;
     text-align: center;
 }
 
 .card img{
-    border-radius: 8%;
+    height: auto;
+    width: auto;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.title{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    font-size: 1.67rem;
+    margin-top: 2rem;
+}
+
+.card section{
+    background-color: rgb(212, 212, 234);
+    height: 90PX;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.categoria{
+    font-weight: bold;
 }
 
 .card button{
+    margin: 1px solid white;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
     display: block;
+}
+
+.pay{
+    background-color: blue;
+    color: white;
+    border: 0px ;
+    box-shadow: -3px 9px 8px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.pay:focus{
+outline: none;
+}
+
+.pay:hover{
+    background-color: rgb(147, 147, 232);
+    border: 0px;
+}
+
+.cancel{
+    background-color: white;
+    font-weight: bold;
+    border: 0px ;
+    color: rgb(172, 172, 172);
+}
+
+.cancel:hover{
+    color: black;
 }
